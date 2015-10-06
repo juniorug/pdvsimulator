@@ -1,0 +1,52 @@
+body {
+    background-image: url("../img/background2.png");
+    background-repeat: no-repeat;
+    /*background-size: 100%;*/		
+}
+
+.content { 
+    margin-top: 265px;
+    margin-left: 225px;
+    padding: 10px;
+    font-family:'Open Sans';
+    font-style:condensed;
+    color: white;		
+}
+
+.keyboard {
+    margin-top: 283px;
+    margin-left: 927px;
+}
+
+.send {
+    float: right;
+    /*margin-right: 336px;*/
+    margin-right: 45%;
+    margin-top: 80px;
+    width: 85;
+    height: 150;
+}
+
+input[type=text],input[type=number]
+{
+    background-color: transparent;	
+    color: white;
+    font-size: 50px;
+    height: 100px;
+    width: 455px;
+    padding-left: 10px;
+    text-decoration: none;
+    background-repeat: repeat-x;
+    border-radius: 5px; /*up to date browsers support this, but you can add prefixes if you want*/
+    border: 0;
+}
+
+input[type=submit] {
+    background-image: url("../img/bt_sendBig.png");
+    background-color: transparent;
+    color: transparent;
+    border: transparent;	
+    width: 85;
+    height: 150;
+    background-repeat: no-repeat;
+}
