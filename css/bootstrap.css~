@@ -1650,7 +1650,7 @@ pre code {
   width: 33.33333333%;
 }
 .col-xs-3_5 {
-  width: 28.3%;
+  width: 28.5%;
 }
 .col-xs-3 {
   width: 25%;

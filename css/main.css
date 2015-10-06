@@ -2,12 +2,19 @@ body {
     		
 }
 .content { 
-	background-image: url("../img/backgroundNew.png");
+    background-image: url("../img/backgroundNew.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-	width: 100%;
+    width: 100%;
     height: 100%;
 	padding: 1px;
+}
+
+.container, .container-fluid { 
+    /*background-image: url("../img/backgroundNew.png");*/
+    background-repeat: no-repeat;
+    margin-top: 5px;	
+    /*width: 100%;*/
 }
 .dealer { 
     /*margin-top: 265px;	
@@ -37,6 +44,135 @@ body {
     width: 85;
     height: 150;
 }
+
+.clear {
+    clear: both;
+}
+
+/* tablet body classes*/
+
+/* corners*/
+.col-xs-1.cornertopleft {
+    background-image: url("../img/tablet_parts/corner_top_left.png");
+    background-repeat: no-repeat;
+    height: 117px;	
+    width: 7.9%;	
+    margin-bottom: -1px;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: -1px;		
+}
+
+.col-xs-1.cornertopright{
+    background-image: url("../img/tablet_parts/corner_top_right.png");
+    background-repeat: no-repeat;
+    height: 117px;
+    width: 9%;
+    padding-right: 0px;
+    padding-left: 0px;
+    /*float: right;*/
+}
+
+.col-xs-1.cornerbottomleft {
+    background-image: url("../img/tablet_parts/corner_bottom_left.png");
+    background-repeat: no-repeat;
+    height: 117px;
+    width: 7.9%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: -1px;
+}
+
+.col-xs-1.cornerbottomright{
+    background-image: url("../img/tablet_parts/corner_bottom_right.png");
+    background-repeat: no-repeat;
+    height: 117px;
+    width: 9%;
+    padding-right: 0px;
+    padding-left: 0px;
+    /*float: right;*/
+}
+
+/* sides*/
+
+.col-xs-1.buttonleft {
+    background-image: url("../img/tablet_parts/button_left.png");
+    background-repeat: no-repeat;
+    height: 187px;	
+    margin-top: -1px;
+}
+
+.col-xs-1.buttonright{
+    background-image: url("../img/tablet_parts/button_right.png");
+    background-repeat: no-repeat;
+    height: 187px;
+    margin-top: -1px;
+    /*float: right;*/
+}
+
+.col-xs-1.degradeleft {
+    background-image: url("../img/tablet_parts/degrade_left.png");
+    background-repeat: no-repeat;
+    height: 188px;	
+}
+
+.col-xs-1.degraderight{
+    background-image: url("../img/tablet_parts/degrade_right.png");
+    background-repeat: no-repeat;
+    height: 188px;
+    /*float: right;*/
+}
+
+.col-xs-1.borderleft {
+    background-image: url("../img/tablet_parts/border_left.png");
+    background-repeat: repeat-y;
+    /*height: 504px;*/
+    height: 40vh;	
+}
+
+.col-xs-1.borderright {
+    background-image: url("../img/tablet_parts/border_right.png");
+    background-repeat: repeat-y;
+    /*height: 504px;*/
+    height: 40vh;
+    /*float: right;*/	
+}
+
+
+.col-xs-10.emptydiv {
+    width: 75.95%;
+}
+/* top/bottom*/
+.webcam {
+    background-image: url("../img/tablet_parts/webcam.png");
+    background-repeat: no-repeat;
+    width: 165px;
+    height: 117px;
+    float: left;
+    margin-right: -1px;		
+}
+.col-xs-4.bordertop{
+    background-image: url("../img/tablet_parts/border_top.png");
+    background-repeat: repeat-x;
+    height: 117px;
+    /*padding-right: 0px;
+    padding-left: 0px*/	
+}
+
+.buttonsbottom {
+    background-image: url("../img/tablet_parts/buttons_bottom.png");
+    background-repeat: no-repeat;
+    width: 448px;
+    height: 117px;
+    float: left;	
+}
+.col-xs-3.borderbottom{
+    background-image: url("../img/tablet_parts/border_bottom.png");
+    background-repeat: repeat-x;
+    height: 117px;
+    width: 24.86%;	
+}
+
 
 input[type=text],input[type=number]
 {
