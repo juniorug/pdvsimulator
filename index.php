@@ -35,9 +35,15 @@
 	     <div class="clear"></div>
 
 	     <!-- tablet side buttons-->		
-             <div class="row">	
+             <div class="row" style="position: relative;">	
  	        <div class="col-xs-1 buttonleft"></div>
-		 <div class="col-xs-10 emptydiv"></div>	
+		<div class="col-xs-10 emptydiv" style="position: relative;">
+			<div class="dealer" style="position: absolute; z-index: 10;">
+				<form action = "index.php" method = "post">
+				     <input type = "text" name = "msg" size = "10" autofocus value="*214#" >
+				 </form>
+				</div>
+			</div>	
 		 <div class="col-xs-1 buttonright"></div>
 	     </div>   	
 	     <div class="clear"></div>	
