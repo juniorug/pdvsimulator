@@ -10,16 +10,11 @@
  </head>
  <body>
     <div class="content">
- 	<form action = "index.php" method = "post">
-	     <input type = "text" name = "msg" size = "10" autofocus value="*214#" >
-	 </form>
+       <div class="dealer">
+        <form action = "index.php" method = "post">
+             <input type = "text" name = "msg" size = "10" autofocus value="*214#" >
+         </form>
+        </div>
     </div>
-    <div class="keyboard">
-	<div class="send">
-		<form action = "messages.php" method = "post">
-		     <input type = "submit" value = "Send">	
-		 </form>
-	</div>
-    </div>	
  </body>
 </html>
