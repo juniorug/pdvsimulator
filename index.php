@@ -22,63 +22,59 @@
    </head>
    <body>
       <div class="container-fluid">
-          
-          <div class="row">   
-	     <!-- tablet top-->	         
-	     <div class="row">	
- 	         <div class="col-xs-1 cornertopleft"></div>
-		 <div class="col-xs-4 bordertop"></div>	
-		 <div class="webcam"></div>
-		 <div class="col-xs-4 bordertop"></div>
-		 <div class="col-xs-1 cornertopright"></div>
-	     </div>
-	     <div class="clear"></div>
-
-	     <!-- tablet side buttons-->		
-             <div class="row" style="position: relative;">	
- 	        <div class="col-xs-1 buttonleft"></div>
-		<div class="col-xs-10 emptydiv" style="position: relative;">
-			<div class="dealer" style="position: absolute; z-index: 10;">
-				<form action = "index.php" method = "post">
-				     <input type = "text" name = "msg" size = "10" autofocus value="*214#" >
-				 </form>
-				</div>
-			</div>	
-		 <div class="col-xs-1 buttonright"></div>
-	     </div>   	
-	     <div class="clear"></div>	
-
-
-             <!-- tablet side gradient-->		
-             <div class="row">	
- 	        <div class="col-xs-1 degradeleft"></div>
-		 <div class="col-xs-10 emptydiv"></div>	
-		 <div class="col-xs-1 degraderight"></div>
-	     </div>   	
-	     <div class="clear"></div> 
-
-	     <!-- tablet side border-->	
-	     <div class="row">	
- 	        <div class="col-xs-1 borderleft"></div>
-		 <div class="col-xs-10 emptydiv"></div>	
-		 <div class="col-xs-1 borderright"></div>
-	     </div>   	
-	     <div class="clear"></div> 
-
-             <div class="row">	
- 	         <div class="col-xs-1 cornerbottomleft"></div>
-		 <div class="col-xs-3 borderbottom"></div>	
-		 <div class="buttonsbottom"></div>
-		 <div class="col-xs-3 borderbottom"></div>
-		 <div class="col-xs-1 cornerbottomright"></div>
-	     </div>  			
-		 <!--
-		 <div class="dealer">
-		    <form action = "index.php" method = "post">
-		       <input type = "text" name = "msg" size = "10" autofocus value="*214#" >
-		    </form>
-		 </div> -->
-          </div>   
+         <div class="row" style="position: relative;">
+            <div class="wallpaper" style="position: absolute; z-index: -1;"></div><div class="clear"></div>
+            <div class="fixedkeyboard" style="position: absolute; z-index: -1;"></div>
+            <!-- tablet top-->	         
+            <div class="row">
+               <div class="col-xs-1 cornertopleft"></div>
+               <div class="col-xs-4 bordertop"></div>
+               <div class="webcam"></div>
+               <div class="col-xs-4 bordertop"></div>
+               <div class="col-xs-1 cornertopright"></div>
+            </div>
+            <div class="clear"></div>
+            <!-- tablet side buttons-->		
+            <div class="row" style="position: relative;">
+               <div class="col-xs-1 buttonleft"></div>
+               <div class="col-xs-10 emptydiv" style="position: relative;">
+                  <div class="dealer">
+                     <form action = "index.php" method = "post">
+                        <input type = "text" name = "msg" size = "10" autofocus value="*214#" >
+                     </form>
+                  </div>
+               </div>
+               <div class="col-xs-1 buttonright"></div>
+            </div>
+            <div class="clear"></div>
+            <!-- tablet side gradient-->		
+            <div class="row">
+               <div class="col-xs-1 degradeleft"></div>
+               <div class="col-xs-10 emptydiv"></div>
+               <div class="col-xs-1 degraderight"></div>
+            </div>
+            <div class="clear"></div>
+            <!-- tablet side border-->	
+            <div class="row">
+               <div class="col-xs-1 borderleft"></div>
+               <div class="col-xs-10 emptydiv"></div>
+               <div class="col-xs-1 borderright"></div>
+            </div>
+            <div class="clear"></div>
+            <div class="row">
+               <div class="col-xs-1 cornerbottomleft"></div>
+               <div class="col-xs-3 borderbottom"></div>
+               <div class="buttonsbottom"></div>
+               <div class="col-xs-3 borderbottom"></div>
+               <div class="col-xs-1 cornerbottomright"></div>
+            </div>
+            <!--
+               <div class="dealer">
+                  <form action = "index.php" method = "post">
+                     <input type = "text" name = "msg" size = "10" autofocus value="*214#" >
+                  </form>
+               </div> -->
+         </div>
       </div>
    </body>
 </html>

@@ -11,21 +11,47 @@ body {
 }
 
 .container, .container-fluid { 
-    /*background-image: url("../img/backgroundNew.png");*/
+    /*background-image: url("../img/wallpaper.png");*/
     background-repeat: no-repeat;
     margin-top: 5px;	
     /*width: 100%;*/
+}
+
+.wallpaper{
+	background-image: url("../img/wallpaper2.png");
+	background-repeat: no-repeat;
+	position: absolute;
+    z-index: -1;
+    width: 85%;
+    height: 75%;
+    margin-left: 133px;
+    margin-right: 131px;
+}
+
+.fixedkeyboard{
+	background-image: url("../img/tablet_parts/keyboard_fixed.png");
+	background-repeat: no-repeat;
+	position: absolute;
+    z-index: -1;
+    width: 85%;
+    height: 75%;
+    margin-left: 133px;
+    margin-right: 131px;
+	margin-top: 37%;
 }
 .dealer { 
     /*margin-top: 265px;	
     margin-left: 225px;
 	padding: 10px;*/
+	border-radius: 15px;
+	position:absolute;
+	z-index: 10;
 	margin-top: 7%;
     margin-left: 10%;
 	background-image: url("../img/dealer_crop.png");
 	background-repeat: no-repeat;
-	background-size: 45% 45%;
-    padding: 10%;
+	/*background-size: 75% 100%;*/
+    padding: 1%;
     font-family:'Open Sans';
     font-style:condensed;
     color: white;		
@@ -56,7 +82,7 @@ body {
     background-image: url("../img/tablet_parts/corner_top_left.png");
     background-repeat: no-repeat;
     height: 117px;	
-    width: 7.9%;	
+    width: 133px;	
     margin-bottom: -1px;
     padding-right: 0px;
     padding-left: 0px;
@@ -66,8 +92,8 @@ body {
 .col-xs-1.cornertopright{
     background-image: url("../img/tablet_parts/corner_top_right.png");
     background-repeat: no-repeat;
-    height: 117px;
-    width: 9%;
+    height: 117px;	
+    width: 131px;
     padding-right: 0px;
     padding-left: 0px;
     /*float: right;*/
@@ -77,7 +103,7 @@ body {
     background-image: url("../img/tablet_parts/corner_bottom_left.png");
     background-repeat: no-repeat;
     height: 117px;
-    width: 7.9%;
+    width: 133px;
     padding-right: 0px;
     padding-left: 0px;
     margin-right: -1px;
@@ -87,7 +113,7 @@ body {
     background-image: url("../img/tablet_parts/corner_bottom_right.png");
     background-repeat: no-repeat;
     height: 117px;
-    width: 9%;
+    width: 133px;
     padding-right: 0px;
     padding-left: 0px;
     /*float: right;*/
@@ -98,6 +124,7 @@ body {
 .col-xs-1.buttonleft {
     background-image: url("../img/tablet_parts/button_left.png");
     background-repeat: no-repeat;
+	width:133px;
     height: 187px;	
     margin-top: -1px;
 }
@@ -105,6 +132,7 @@ body {
 .col-xs-1.buttonright{
     background-image: url("../img/tablet_parts/button_right.png");
     background-repeat: no-repeat;
+	width:131px;
     height: 187px;
     margin-top: -1px;
     /*float: right;*/
@@ -113,12 +141,14 @@ body {
 .col-xs-1.degradeleft {
     background-image: url("../img/tablet_parts/degrade_left.png");
     background-repeat: no-repeat;
+	width:133px;
     height: 188px;	
 }
 
 .col-xs-1.degraderight{
     background-image: url("../img/tablet_parts/degrade_right.png");
     background-repeat: no-repeat;
+	width:131px;
     height: 188px;
     /*float: right;*/
 }
@@ -126,6 +156,7 @@ body {
 .col-xs-1.borderleft {
     background-image: url("../img/tablet_parts/border_left.png");
     background-repeat: repeat-y;
+	width:133px;
     /*height: 504px;*/
     height: 40vh;	
 }
@@ -133,6 +164,7 @@ body {
 .col-xs-1.borderright {
     background-image: url("../img/tablet_parts/border_right.png");
     background-repeat: repeat-y;
+	width:131px;
     /*height: 504px;*/
     height: 40vh;
     /*float: right;*/	
@@ -140,7 +172,7 @@ body {
 
 
 .col-xs-10.emptydiv {
-    width: 75.95%;
+    width: 77.7%;
 }
 /* top/bottom*/
 .webcam {
@@ -170,7 +202,7 @@ body {
     background-image: url("../img/tablet_parts/border_bottom.png");
     background-repeat: repeat-x;
     height: 117px;
-    width: 24.86%;	
+    width: 20.97%;	
 }
 
 
@@ -181,7 +213,9 @@ input[type=text],input[type=number]
     font-size: 50px;
     height: 100px;
     width: 455px;
-    padding-left: 10px;
+    padding-left: 5px;
+    padding-top: 10px;
+	margin-top:95px;
     text-decoration: none;
     background-repeat: repeat-x;
     border-radius: 5px; /*up to date browsers support this, but you can add prefixes if you want*/
