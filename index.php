@@ -23,8 +23,47 @@
    <body>
       <div class="container-fluid">
          <div class="row" style="position: relative;">
+            <!-- fixed divs--> 
             <div class="wallpaper" style="position: absolute; z-index: -1;"></div><div class="clear"></div>
-            <div class="fixedkeyboard" style="position: absolute; z-index: -1;"></div>
+            <div class="fixedkeyboard">
+                <div class="innerfixedkeyboard"></div>
+                <div class="numerickeyboard">
+			<table>
+			    <tr>
+				<td><button class="bt1"></button></td>
+				<td><button class="bt2"></button></td>
+				<td><button class="bt3"></button></td>
+			    </tr>
+			    <tr>
+				<td><button class="bt4"></button></td>
+				<td><button class="bt5"></button></td>
+				<td><button class="bt6"></button></td>
+			    </tr>
+			    <tr>
+				<td><button class="bt7"></button></td>
+				<td><button class="bt8"></button></td>
+				<td><button class="bt9"></button></td>
+			    </tr>
+			    <tr>
+                                 <td colspan="2"><button class="bt0"></button></td>
+				 <td><button class="btdot"></button></td>
+			    </tr>	
+			</table>		
+		</div> 
+                <div class="sendrow">
+			<table>
+			    <tr>
+				<td><button class="btback"></button></td>
+			    </tr>
+			    <tr>
+				<td><button class="btsend"></button></td>
+			    </tr>
+			    <tr>
+				 <td><button class="btfind"></button></td>
+                            </tr>
+			</table>
+                </div>  
+            </div>
             <!-- tablet top-->	         
             <div class="row">
                <div class="col-xs-1 cornertopleft"></div>
