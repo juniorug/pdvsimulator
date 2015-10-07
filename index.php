@@ -17,6 +17,13 @@
       <script>
          document.getElementById("msg").focus();
       </script>
+      <script>
+            function writeNumber(number) {
+				document.getElementById("msg").focus();
+			    document.getElementById("msg").innerHTML = number;
+				document.getElementById("msg").value = number;
+		    }
+	  </script>
       <script type="text/javascript" src="js/jquery.min.js"></script>
       <script type="text/javascript" src="js/bootstrap.js"></script>   
    </head>
@@ -30,7 +37,7 @@
                 <div class="numerickeyboard">
 			<table>
 			    <tr>
-				<td><button class="bt1"></button></td>
+				<td><button class="bt1" onclick="writeNumber(number)"></button></td>
 				<td><button class="bt2"></button></td>
 				<td><button class="bt3"></button></td>
 			    </tr>
@@ -78,8 +85,10 @@
                <div class="col-xs-1 buttonleft"></div>
                <div class="col-xs-10 emptydiv" style="position: relative;">
                   <div class="dealer">
-                     <form action = "index.php" method = "post">
-                        <input type = "text" name = "msg" size = "10" autofocus value="*214#" >
+                     <form>
+                        <!--<input type = "text" name = "msg" size = "10" autofocus value="*214#" >-->
+                        <input type = "text" name = "msg" size = "10" autofocus >
+                        <button class="bt1" onclick="writeNumber(number)"></button>
                      </form>
                   </div>
                </div>

@@ -335,6 +335,64 @@ body {
     border: none; 	
 }
 
+.bt0:active {
+    background-image: url("../img/bt_0_clicked.png");   
+	
+}
+
+.bt1:active {
+    background-image: url("../img/bt_1_clicked.png");    	
+}
+
+.bt2:active {
+    background-image: url("../img/bt_2_clicked.png");    	
+}
+
+.bt3:active {
+    background-image: url("../img/bt_3_clicked.png");    	
+}
+
+.bt4:active {
+    background-image: url("../img/bt_4_clicked.png");    	
+}
+
+.bt5:active {
+    background-image: url("../img/bt_5_clicked.png");    	
+}
+
+.bt6:active {
+    background-image: url("../img/bt_6_clicked.png");    	
+}
+
+.bt7:active {
+    background-image: url("../img/bt_7_clicked.png");    	
+}
+
+.bt8:active {
+    background-image: url("../img/bt_8_clicked.png");    	
+}
+
+.bt9:active {
+    background-image: url("../img/bt_9_clicked.png");    	
+}
+
+.btdot:active {
+    background-image: url("../img/bt_dot_clicked.png");
+    height: 72px;    	
+}
+
+.btback:active {
+    background-image: url("../img/bt_back_keyboard_clicked.png"); 
+}
+
+.btfind:active {
+    background-image: url("../img/bt_findSmall_clicked.png");    	
+}
+
+.btsend:active {
+    background-image: url("../img/bt_sendBig.png");   
+}
+
 
 input[type=text],input[type=number]
 {
