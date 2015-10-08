@@ -81,10 +81,10 @@
                 <div class="row" style="position: relative;">
                     <div class="col-xs-1 buttonleft"></div>
                     <div class="col-xs-10 emptydiv" style="position: relative;">
-                        <div class="dealer">
+                        <div class="ussdinterface">
                             <form action = "messages" method = "post">
                                 <!--<input type = "text" name = "msg" size = "10" autofocus value="*214#" >-->
-                                <input type = "text" name = "msg" id="msg" size = "10" onfocus="this.value = this.value;" autofocus value="*214#">
+                                <input type = "text" name = "msg" id="msg" size = "10" onfocus="this.value = this.value;" autofocus value="">
                             </form>
                         </div>
                     </div>
