@@ -17,48 +17,7 @@
         <script>
             document.getElementById("msg").focus();
         </script>
-        <script>
-            function writeNumber(number) {
-                //alert(number); 
-                  
-                document.getElementById("msg").focus();
-                var field = document.getElementById("msg").value;
-                var conc;
-                if (number == '-1'){
-		    conc = field.substring(0, field.length - 1);
-		} else {
-	            conc = field.concat(number);    
-		}  
-                 
-                document.getElementById("msg").innerHTML = conc;
-                document.getElementById("msg").value = conc;
-            }
-        </script>        
-        <script>
-            function post_to_url(url, params) {
-                var form = document.createElement('form');
-                form.action = url;
-                form.method = 'POST';
-            
-                for (var i in params) {
-                    if (params.hasOwnProperty(i)) {
-                        var input = document.createElement('input');
-                        input.type = 'hidden';
-                        input.name = i;
-                        input.value = params[i];
-                        form.appendChild(input);
-                    }
-                }
-            
-                form.submit();
-            }	
-            
-            function saveValue(){
-                //alert(document.getElementById("msg").value);
-                post_to_url('messages.php', { msg: document.getElementById("msg").value});
-                return false;
-            }  
-        </script>
+        <script type="text/javascript" src="js/simulator.js"></script>
         <script type="text/javascript" src="js/jquery.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.js"></script>   
     </head>
@@ -123,7 +82,7 @@
                     <div class="col-xs-1 buttonleft"></div>
                     <div class="col-xs-10 emptydiv" style="position: relative;">
                         <div class="dealer">
-                            <form action = "messages.php" method = "post">
+                            <form action = "messages" method = "post">
                                 <!--<input type = "text" name = "msg" size = "10" autofocus value="*214#" >-->
                                 <input type = "text" name = "msg" id="msg" size = "10" onfocus="this.value = this.value;" autofocus value="*214#">
                             </form>

@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_URI} !^/(downloads|img|js|includes|ajax|app|arquivos|css|paginas|admin|xml|swf)/.*$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+</IfModule>
