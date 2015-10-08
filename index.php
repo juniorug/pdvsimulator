@@ -37,7 +37,7 @@
                 <div class="numerickeyboard">
 			<table>
 			    <tr>
-				<td><button class="bt1" onclick="writeNumber(number)"></button></td>
+				<td><button class="bt1" onclick="writeNumber("1")"></button></td>
 				<td><button class="bt2"></button></td>
 				<td><button class="bt3"></button></td>
 			    </tr>
@@ -63,7 +63,7 @@
 				<td><button class="btback"></button></td>
 			    </tr>
 			    <tr>
-				<td><button class="btsend"></button></td>
+				<td><button class="btsend" onclick="location.href = 'messages.php';"></button></td>
 			    </tr>
 			    <tr>
 				 <td><button class="btfind"></button></td>
@@ -87,8 +87,7 @@
                   <div class="dealer">
                      <form>
                         <!--<input type = "text" name = "msg" size = "10" autofocus value="*214#" >-->
-                        <input type = "text" name = "msg" size = "10" autofocus >
-                        <button class="bt1" onclick="writeNumber(number)"></button>
+                        <input type = "text" name = "msg" size = "10" autofocus value="*214#">
                      </form>
                   </div>
                </div>
