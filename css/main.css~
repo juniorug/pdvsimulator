@@ -19,41 +19,42 @@ body {
 }
 
 .wallpaper{
-    background-image: url("../img/wallpaper2.png");
+    background-image: url("../img/wallpaper3.png");
     background-repeat: no-repeat;
     position: absolute;
     z-index: -1;
     /*width: 85%;
     height: 75%;*/
-    width: 1300px;
+    width: 1000px;
     height: 575px;
-    margin-left: 130px;
+    margin-left: 120px;
     margin-right: 131px;
-    margin-top: 20px;
+    margin-top: 100px;
 }
 
 .fixedkeyboard{
     background-image: url("../img/tablet_parts/background_keyboard.png");
     background-repeat: repeat-x;
     position: absolute;
-    z-index: -1;
+    z-index: 10;
     /*width: 85%;
     height: 75%;*/
-    width: 1300px;
-    height: 330px;
+    width: 972px;
+    height: 260px;
     margin-left: 132px;
     margin-right: 131px;
     /*margin-top: 37%;*/
-    margin-top: 569px;
+    margin-top: 512px;
 }
+
 .innerfixedkeyboard{
-    background-image: url("../img/tablet_parts/keyboard_fixed.png");
+    background-image: url("../img/tablet_parts/keyboard_fixed2.png");
     background-repeat: no-repeat;
     z-index: 10;
     position: relative;
-    width: 650px;
-    height: 320px;
-    margin: 8px;
+    width: 515px;
+    height: 245px;
+    margin: 10px;
     float: left;
 }
 
@@ -62,7 +63,8 @@ body {
     background-repeat: no-repeat;
     z-index: 10;
     position: relative;
-    width: 275px;
+    margin-top: 3px;
+    width: 225px;
     height: 320px;
     margin: 0px 8px;
     float: left;	
@@ -73,7 +75,7 @@ body {
     background-repeat: no-repeat;
     z-index: 10;
     position: relative;
-    width: 275px;
+    width: 80px;
     height: 320px;
     margin: 0px 8px;
     float: left;	
@@ -83,15 +85,15 @@ body {
 .dealer { 
     /*margin-top: 265px;	
     margin-left: 225px;
-	padding: 10px;*/
-	border-radius: 15px;
-	position:absolute;
-	z-index: 10;
-	margin-top: 7%;
-    margin-left: 10%;
-	background-image: url("../img/dealer_crop.png");
-	background-repeat: no-repeat;
-	/*background-size: 75% 100%;*/
+    padding: 10px;*/
+    border-radius: 15px;
+    position:absolute;
+    z-index: 10;
+    margin-top: 15px;
+    margin-left: 2px;
+    background-image: url("../img/dealer_crop2.png");
+    background-repeat: no-repeat;
+    /*background-size: 75% 100%;*/
     padding: 1%;
     font-family:'Open Sans';
     font-style:condensed;
@@ -198,7 +200,7 @@ body {
     background-image: url("../img/tablet_parts/border_left.png");
     background-repeat: repeat-y;
     width:133px;
-    height: 400px;
+    height: 280px;
     /*height: 40vh;*/	
 }
 
@@ -206,7 +208,7 @@ body {
     background-image: url("../img/tablet_parts/border_right.png");
     background-repeat: repeat-y;
     width:131px;
-    height: 400px;
+    height: 280px;
     /*height: 40vh;*/
     /*float: right;*/	
 }
@@ -214,7 +216,7 @@ body {
 
 .col-xs-10.emptydiv {
     /*width: 77.65%;*/
-    width: 1287.65px;
+    width: 969px;
 }
 /* top/bottom*/
 .webcam {
@@ -228,7 +230,7 @@ body {
 .col-xs-4.bordertop{
     background-image: url("../img/tablet_parts/border_top.png");
     background-repeat: repeat-x;
-    width: 562px;
+    width: 403px;
     height: 117px;
     /*padding-right: 0px;
     padding-left: 0px*/	
@@ -246,15 +248,17 @@ body {
     background-repeat: repeat-x;
     height: 117px;
     /*width: 20.97%;*/
-    width: 420px;	
+    width: 261px;	
 }
 
 /* BUTTONS*/
 
-.buttons, .bt1, .bt2, .bt3, .bt4, .bt5, .bt6, .bt7, .bt8, .bt9, .btdot, .btfind, .btback {
-    width: 84px;
-    height: 73px;
-    margin: 6px 6px 0px 0px;
+.buttons, .bt1, .bt2, .bt3, .bt4, .bt5, .bt6, .bt7, .bt8, .bt9,.btdot, .btasterisk, .btfind, .btback, .bthash {
+    /*width: 84px;
+    height: 73px;*/
+    width: 66px;
+    height: 57px;
+    margin: 5px 5px 0px 0px;
     background-repeat: no-repeat;
     padding: 0px;
     border-color: transparent;
@@ -263,11 +267,13 @@ body {
 }
 
 .bt0 {
-    background-image: url("../img/bt_0.png");   
+    background-image: url("../img/bt_resized/bt_0_2.png");   
     background-repeat: no-repeat;
-    width: 176px;
-    height: 71px;
-    margin: 7px 7px 0px 0px;
+    /*width: 176px;
+    height: 71px;*/
+    width: 66px;
+    height: 54px;
+    margin: 5px 5px 0px 0px;
     background-repeat: no-repeat;
     padding: 0px;
     border-color: transparent;
@@ -275,64 +281,149 @@ body {
 }
 
 .bt1 {
-    background-image: url("../img/bt_1.png");    	
+    background-image: url("../img/bt_resized/bt_1.png");    	
 }
 
 .bt2 {
-    background-image: url("../img/bt_2.png");    	
+    background-image: url("../img/bt_resized/bt_2.png");    	
 }
 
 .bt3 {
-    background-image: url("../img/bt_3.png");    	
+    background-image: url("../img/bt_resized/bt_3.png");    	
 }
 
 .bt4 {
-    background-image: url("../img/bt_4.png");    	
+    background-image: url("../img/bt_resized/bt_4.png");    	
 }
 
 .bt5 {
-    background-image: url("../img/bt_5.png");    	
+    background-image: url("../img/bt_resized/bt_5.png");    	
 }
 
 .bt6 {
-    background-image: url("../img/bt_6.png");    	
+    background-image: url("../img/bt_resized/bt_6.png");    	
 }
 
 .bt7 {
-    background-image: url("../img/bt_7.png");    	
+    background-image: url("../img/bt_resized/bt_7.png");    	
 }
 
 .bt8 {
-    background-image: url("../img/bt_8.png");    	
+    background-image: url("../img/bt_resized/bt_8.png");    	
 }
 
 .bt9 {
-    background-image: url("../img/bt_9.png");    	
+    background-image: url("../img/bt_resized/bt_9.png");    	
 }
 
 .btdot {
-    background-image: url("../img/bt_dot.png");
-    height: 72px;    	
+    background-image: url("../img/bt_resized/bt_dot.png");
+    /*height: 72px;*/   
+    height: 54px; 	
+}
+
+.bthash {
+    background-image: url("../img/bt_resized/bt_hash.png");
+    /*height: 72px;*/   
+    height: 54px; 	
+}
+
+.btasterisk {
+    background-image: url("../img/bt_resized/bt_asterisk.png");
+    /*height: 72px;*/   
+    height: 54px; 	
 }
 
 .btback {
-    background-image: url("../img/bt_back_keyboard.png"); 
+    background-image: url("../img/bt_resized/bt_back_keyboard.png"); 
 }
 
 .btfind {
-    background-image: url("../img/bt_findSmall.png");    	
+    background-image: url("../img/bt_resized/bt_findSmall.png");   
+    height: 54px;
+    margin-top: 7px; 	
 }
 
 .btsend {
-    background-image: url("../img/bt_sendBig.png");   
+    background-image: url("../img/bt_resized/bt_sendBig.png");   
     background-repeat: no-repeat;
-    width: 84px;
-    height: 150px;
-    margin: 7px 7px 0px 0px;
+    /*width: 84px;
+    height: 150px;*/
+    width: 66px;
+    height: 117px;
+    margin: 6px 6px 0px 0px;
     background-repeat: no-repeat;
     padding: 0px;
     border-color: transparent;
     border: none; 	
+}
+
+.bt0:active {
+    background-image: url("../img/bt_resized/bt_0_clicked_2.png");   
+	
+}
+
+.bt1:active {
+    background-image: url("../img/bt_resized/bt_1_clicked.png");    	
+}
+
+.bt2:active {
+    background-image: url("../img/bt_resized/bt_2_clicked.png");    	
+}
+
+.bt3:active {
+    background-image: url("../img/bt_resized/bt_3_clicked.png");    	
+}
+
+.bt4:active {
+    background-image: url("../img/bt_resized/bt_4_clicked.png");    	
+}
+
+.bt5:active {
+    background-image: url("../img/bt_resized/bt_5_clicked.png");    	
+}
+
+.bt6:active {
+    background-image: url("../img/bt_resized/bt_6_clicked.png");    	
+}
+
+.bt7:active {
+    background-image: url("../img/bt_resized/bt_7_clicked.png");    	
+}
+
+.bt8:active {
+    background-image: url("../img/bt_resized/bt_8_clicked.png");    	
+}
+
+.bt9:active {
+    background-image: url("../img/bt_resized/bt_9_clicked.png");    	
+}
+
+.btdot:active {
+    background-image: url("../img/bt_resized/bt_dot_clicked.png");
+    height: 54px;    	
+}
+
+.bthash:active {
+    background-image: url("../img/bt_resized/bt_hash_clicked.png");
+    height: 54px; 	
+}
+
+.btasterisk:active {
+    background-image: url("../img/bt_resized/bt_asterisk_clicked.png");
+    height: 54px;  	
+}
+
+.btback:active {
+    background-image: url("../img/bt_resized/bt_back_keyboard_clicked.png"); 
+}
+
+.btfind:active {
+    background-image: url("../img/bt_resized/bt_findSmall_clicked.png");    	
+}
+
+.btsend:active {
+    background-image: url("../img/bt_resized/bt_sendBig.png");   
 }
 
 
@@ -340,12 +431,12 @@ input[type=text],input[type=number]
 {
     background-color: transparent;	
     color: white;
-    font-size: 50px;
-    height: 100px;
-    width: 455px;
+    font-size: 40px;
+    height: 75px;
+    width: 341px;
     padding-left: 5px;
     padding-top: 10px;
-	margin-top:95px;
+    margin-top: 70px;
     text-decoration: none;
     background-repeat: repeat-x;
     border-radius: 5px; /*up to date browsers support this, but you can add prefixes if you want*/
