@@ -13,6 +13,7 @@ function writeNumber(number) {
 }
 
 function post_to_url(url, params) {
+    	
     var form = document.createElement('form');
     form.action = url;
     form.method = 'POST';
@@ -26,11 +27,16 @@ function post_to_url(url, params) {
             form.appendChild(input);
         }
     }
-
+    //$('<form>').appendTo("body").submit(); 
+    $('<form>').attr({ method: 'POST', action: 'messages.php', })
+    .append($('<input>').attr({ type: 'hidden', name: 'msg', value: document.getElementById("msg").value }))
+    .appendTo("body")
+    .submit()
+    .remove();	 
     form.submit();
 }
 
-function saveValue() {
+function saveValue() {	
     post_to_url('messages.php', {
         msg: document.getElementById("msg").value
     });
@@ -52,3 +58,6 @@ function inputFocus(elmId) {
   }
 }
 
+function testM() {
+    alert("msg2");
+}
