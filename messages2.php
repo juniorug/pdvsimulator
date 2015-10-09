@@ -3,6 +3,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="content-language" content="pt-BR" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>PDV Simulator</title>
@@ -82,10 +83,27 @@
                     <div class="col-xs-1 buttonleft"></div>
                     <div class="col-xs-10 emptydiv" style="position: relative;">
                         <div class="ussdinterface">
-                            <form action = "messages" method = "post">
-                                <!--<input type = "text" name = "msg" size = "10" autofocus value="*214#" >-->
-                                <input type = "text" name = "msg" id="msg" size = "10" onfocus="this.value = this.value;" autofocus value="">
-                            </form>
+			    <div class="ussdbody">
+				<pre>Vivo PDV
+Valores de Recarga:
+R$5
+R$10
+R$15
+R$20
+R$25
+R$35
+R$50
+R$100
+R$200
+R$300
+0. Voltar
+2. Sair</pre>
+                            </div>
+                            <div>   
+                                <form action = "messages" method = "post">
+                                    <input type = "text" name = "msg" id="msg" size = "10" onfocus="this.value = this.value;" autofocus value="">
+                                </form>
+			    </div>
                         </div>
                     </div>
                     <div class="col-xs-1 buttonright"></div>
