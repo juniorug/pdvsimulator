@@ -36,3 +36,11 @@ function saveValue() {
     });
     return false;
 }
+
+function cancel() {
+    var form = document.createElement('form');
+    form.action = 'index.php';
+    form.method = 'POST';
+    form.submit();
+    return false;
+}

@@ -1,20 +1,23 @@
 body {
     		
 }
+
+pre {
+    margin: 0px;
+}
+
 .content { 
     background-image: url("../img/backgroundNew.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 100%;
     height: 100%;
-	padding: 1px;
+    padding: 1px;
 }
 
 .container, .container-fluid { 
-    /*background-image: url("../img/wallpaper.png");*/
     background-repeat: no-repeat;
     margin-top: 5px;	
-    /*width: 100%;*/
     width: 1687px;
 }
 
@@ -23,8 +26,6 @@ body {
     background-repeat: no-repeat;
     position: absolute;
     z-index: -1;
-    /*width: 85%;
-    height: 75%;*/
     width: 1000px;
     height: 575px;
     margin-left: 120px;
@@ -37,13 +38,10 @@ body {
     background-repeat: repeat-x;
     position: absolute;
     z-index: 10;
-    /*width: 85%;
-    height: 75%;*/
     width: 972px;
     height: 260px;
     margin-left: 132px;
     margin-right: 131px;
-    /*margin-top: 37%;*/
     margin-top: 512px;
 }
 
@@ -59,7 +57,6 @@ body {
 }
 
 .numerickeyboard{
-    /*background-image: url("../img/tablet_parts/keyboard_fixed.png");*/
     background-repeat: no-repeat;
     z-index: 10;
     position: relative;
@@ -71,7 +68,6 @@ body {
 }
 
 .sendrow{
-    /* background-image: url("../img/tablet_parts/keyboard_fixed.png");*/
     background-repeat: no-repeat;
     z-index: 10;
     position: relative;
@@ -83,9 +79,6 @@ body {
 
 
 .dealer { 
-    /*margin-top: 265px;	
-    margin-left: 225px;
-    padding: 10px;*/
     border-radius: 15px;
     position:absolute;
     z-index: 10;
@@ -93,7 +86,6 @@ body {
     margin-left: 2px;
     background-image: url("../img/dealer_crop2.png");
     background-repeat: no-repeat;
-    /*background-size: 75% 100%;*/
     padding: 1%;
     font-family:'Open Sans';
     font-style:condensed;
@@ -116,10 +108,6 @@ body {
     color: white;	
 }
 
-pre {
-    margin: 0px;
-}
-
 .ussdbody {
     color: white;
     font-size: 15px;
@@ -131,7 +119,16 @@ pre {
     /*max-height: 300px;*/
 }
 
-
+.ussdbottom {
+    background-image: url("../img/ussd_bottom_noButton.png");
+    background-repeat: no-repeat;
+    width: 260px;
+    height: 40px;	
+    border-radius: 0px 0px 15px 15px;
+    margin-left: -15px;
+    position: absolute;
+    bottom: 0px;
+}
 
 .keyboard {
     margin-top: 283px;
@@ -172,7 +169,6 @@ pre {
     width: 131px;
     padding-right: 0px;
     padding-left: 0px;
-    /*float: right;*/
 }
 
 .col-xs-1.cornerbottomleft {
@@ -192,7 +188,6 @@ pre {
     width: 133px;
     padding-right: 0px;
     padding-left: 0px;
-    /*float: right;*/
 }
 
 /* sides*/
@@ -208,25 +203,23 @@ pre {
 .col-xs-1.buttonright{
     background-image: url("../img/tablet_parts/button_right.png");
     background-repeat: no-repeat;
-	width:131px;
+    width:131px;
     height: 187px;
     margin-top: -1px;
-    /*float: right;*/
 }
 
 .col-xs-1.degradeleft {
     background-image: url("../img/tablet_parts/degrade_left.png");
     background-repeat: no-repeat;
-	width:133px;
+    width:133px;
     height: 188px;	
 }
 
 .col-xs-1.degraderight{
     background-image: url("../img/tablet_parts/degrade_right.png");
     background-repeat: no-repeat;
-	width:131px;
+    width:131px;
     height: 188px;
-    /*float: right;*/
 }
 
 .col-xs-1.borderleft {
@@ -234,23 +227,19 @@ pre {
     background-repeat: repeat-y;
     width:133px;
     height: 280px;
-    /*height: 40vh;*/	
 }
 
 .col-xs-1.borderright {
     background-image: url("../img/tablet_parts/border_right.png");
     background-repeat: repeat-y;
     width:131px;
-    height: 280px;
-    /*height: 40vh;*/
-    /*float: right;*/	
+    height: 280px;	
 }
-
 
 .col-xs-10.emptydiv {
-    /*width: 77.65%;*/
     width: 969px;
 }
+
 /* top/bottom*/
 .webcam {
     background-image: url("../img/tablet_parts/webcam.png");
@@ -265,8 +254,6 @@ pre {
     background-repeat: repeat-x;
     width: 403px;
     height: 117px;
-    /*padding-right: 0px;
-    padding-left: 0px*/	
 }
 
 .buttonsbottom {
@@ -280,15 +267,12 @@ pre {
     background-image: url("../img/tablet_parts/border_bottom.png");
     background-repeat: repeat-x;
     height: 117px;
-    /*width: 20.97%;*/
     width: 261px;	
 }
 
 /* BUTTONS*/
 
 .buttons, .bt1, .bt2, .bt3, .bt4, .bt5, .bt6, .bt7, .bt8, .bt9,.btdot, .btasterisk, .btfind, .btback, .bthash {
-    /*width: 84px;
-    height: 73px;*/
     width: 66px;
     height: 57px;
     margin: 5px 5px 0px 0px;
@@ -302,8 +286,6 @@ pre {
 .bt0 {
     background-image: url("../img/bt_resized/bt_0_2.png");   
     background-repeat: no-repeat;
-    /*width: 176px;
-    height: 71px;*/
     width: 66px;
     height: 54px;
     margin: 5px 5px 0px 0px;
@@ -350,20 +332,17 @@ pre {
 }
 
 .btdot {
-    background-image: url("../img/bt_resized/bt_dot.png");
-    /*height: 72px;*/   
+    background-image: url("../img/bt_resized/bt_dot.png"); 
     height: 54px; 	
 }
 
 .bthash {
     background-image: url("../img/bt_resized/bt_hash.png");
-    /*height: 72px;*/   
     height: 54px; 	
 }
 
 .btasterisk {
-    background-image: url("../img/bt_resized/bt_asterisk.png");
-    /*height: 72px;*/   
+    background-image: url("../img/bt_resized/bt_asterisk.png");  
     height: 54px; 	
 }
 
@@ -380,8 +359,6 @@ pre {
 .btsend {
     background-image: url("../img/bt_resized/bt_sendBig.png");   
     background-repeat: no-repeat;
-    /*width: 84px;
-    height: 150px;*/
     width: 66px;
     height: 117px;
     margin: 6px 6px 0px 0px;
@@ -392,8 +369,7 @@ pre {
 }
 
 .bt0:active {
-    background-image: url("../img/bt_resized/bt_0_clicked_2.png");   
-	
+    background-image: url("../img/bt_resized/bt_0_clicked_2.png");   	
 }
 
 .bt1:active {
@@ -459,14 +435,37 @@ pre {
     background-image: url("../img/bt_resized/bt_sendBig.png");   
 }
 
+.btcancel, .btsendussd {     
+    width: 113px;
+    height: 28px;
+    background-repeat: no-repeat;
+}
+
+.btcancel {
+    background-image: url("../img/bt_cancel.png"); 
+    margin: 6px 5px 6px 10px;	
+}
+
+.btcancel:active {
+    background-image: url("../img/bt_cancel_clicked.png");
+} 
+
+.btsendussd {
+    background-image: url("../img/bt_send_ussd.png"); 
+    margin: 6px 10px 6px 5px
+}
+
+.btsendussd:active {
+    background-image: url("../img/bt_send_ussd_clicked.png");
+}
 
 input[type=text],input[type=number]
 {
     background-color: transparent;	
     color: white;
     font-size: 40px;
-    height: 75px;
     width: 341px;
+    height: 75px;
     padding-left: 5px;
     padding-top: 10px;
     margin-top: 70px;

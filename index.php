@@ -1,5 +1,18 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<?php 
+    if (!isset($_SESSION)) { session_start(); }
+    if( !isset($_SESSION["sessionId"]) ) {
+	$_SESSION["sessionId"] = 1;
+    } else {
+	if ($_SESSION["sessionId"] == 99999) {
+	    $_SESSION["sessionId"] = 1;        
+        } else {
+	    $_SESSION["sessionId"] = $_SESSION["sessionId"] + 1;	
+	}
+    }
+?>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -23,6 +36,7 @@
         <script type="text/javascript" src="js/bootstrap.js"></script>   
     </head>
     <body>
+<? echo "sessionId:"; echo $_SESSION["sessionId"]; ?>
         <div class="container-fluid">
             <div class="row" style="position: relative;">
                 <!-- fixed divs--> 
@@ -60,7 +74,6 @@
                                 <td><button class="btback" onclick="writeNumber('-1')"></button></td>
                             </tr>
                             <tr>
-                                <!--<td><button class="btsend" onclick="location.href = 'messages.php';"></button></td>-->
                                 <td><button class="btsend" onclick="saveValue(document.getElementById('msg').value)"></button></td>
                             </tr>
                             <tr>
@@ -84,7 +97,6 @@
                     <div class="col-xs-10 emptydiv" style="position: relative;">
                         <div class="dealer">
                             <form action = "messages" method = "post">
-                                <!--<input type = "text" name = "msg" size = "10" autofocus value="*214#" >-->
                                 <input type = "text" name = "msg" id="msg" size = "10" onfocus="this.value = this.value;" autofocus value="*214#">
                             </form>
                         </div>
