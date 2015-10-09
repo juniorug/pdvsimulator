@@ -12,43 +12,19 @@ function writeNumber(number) {
     document.getElementById("msg").value = conc;
 }
 
-function post_to_url(url, params) {
-    	
-    var form = document.createElement('form');
-    form.action = url;
-    form.method = 'POST';
-
-    for (var i in params) {
-        if (params.hasOwnProperty(i)) {
-            var input = document.createElement('input');
-            input.type = 'hidden';
-            input.name = i;
-            input.value = params[i];
-            form.appendChild(input);
-        }
-    }
-    //$('<form>').appendTo("body").submit(); 
-    $('<form>').attr({ method: 'POST', action: 'messages.php', })
+function saveValue() {	
+   $('<form>').attr({ method: 'POST', action: 'messages.php', })
     .append($('<input>').attr({ type: 'hidden', name: 'msg', value: document.getElementById("msg").value }))
     .appendTo("body")
     .submit()
-    .remove();	 
-    //form.submit();
-}
-
-function saveValue() {	
-    post_to_url('messages.php', {
-        msg: document.getElementById("msg").value
-    });
-    return false;
+    .remove();
 }
 
 function cancel() {
-    var form = document.createElement('form');
-    form.action = 'index.php';
-    form.method = 'POST';
-    form.submit();
-    return false;
+    $('<form>').attr({ method: 'POST', action: 'index.php', })
+    .appendTo("body")
+    .submit()
+    .remove();	
 }
 
 function inputFocus(elmId) {
