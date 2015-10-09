@@ -29,7 +29,6 @@
         <script type="text/javascript" src="js/bootstrap.js"></script>   
     </head>
     <body>
-<? echo "sessionId:"; echo $_SESSION["sessionId"]; ?>
         <div class="container-fluid">
             <div class="row" style="position: relative;">
                 <!-- fixed divs--> 

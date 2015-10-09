@@ -29,14 +29,14 @@
         <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:light&v1' rel='stylesheet' type='text/css'>
         <? //js  ?>
         <script>
-            document.getElementById("msg").focus();
+            //document.getElementById("msg").focus();
+              inputFocus("msg");
         </script>
         <script type="text/javascript" src="js/simulator.js"></script>
         <script type="text/javascript" src="js/jquery.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.js"></script>   
     </head>
     <body>
-<? echo "sessionId:"; echo $_SESSION["sessionId"]; ?>
         <div class="container-fluid">
             <div class="row" style="position: relative;">
                 <!-- fixed divs--> 

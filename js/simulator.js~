@@ -44,3 +44,11 @@ function cancel() {
     form.submit();
     return false;
 }
+
+function inputFocus(elmId) {
+  var elem = document.getElementById(elmId);
+  if(typeof elem !== 'undefined' && elem !== null) {
+    document.getElementById(elmId).focus();
+  }
+}
+
