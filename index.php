@@ -2,16 +2,7 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <?php 
-    if (!isset($_SESSION)) { session_start(); }
-    if( !isset($_SESSION["sessionId"]) ) {
-	$_SESSION["sessionId"] = 1;
-    } else {
-	if ($_SESSION["sessionId"] == 99999) {
-	    $_SESSION["sessionId"] = 1;        
-        } else {
-	    $_SESSION["sessionId"] = $_SESSION["sessionId"] + 1;	
-	}
-    }
+    include ("checkSession.php");
 ?>
 <html>
     <head>
@@ -50,34 +41,34 @@
                     <div class="numerickeyboard">
                         <table style="margin-top: 4px;">
                             <tr>
-                                <td><button class="bt1" onclick="writeNumber('1')"></button></td>
-                                <td><button class="bt2" onclick="writeNumber('2')"></button></td>
-                                <td><button class="bt3" onclick="writeNumber('3')"></button></td>
+                                <td><button class="bt1" onclick="writeNumber('1', '<?echo $msg_selected; ?>')"></button></td>
+                                <td><button class="bt2" onclick="writeNumber('2', '<?echo $msg_selected; ?>')"></button></td>
+                                <td><button class="bt3" onclick="writeNumber('3', '<?echo $msg_selected; ?>')"></button></td>
                             </tr>
                             <tr>
-                                <td><button class="bt4" onclick="writeNumber('4')"></button></td>
-                                <td><button class="bt5" onclick="writeNumber('5')"></button></td>
-                                <td><button class="bt6" onclick="writeNumber('6')"></button></td>
+                                <td><button class="bt4" onclick="writeNumber('4', '<?echo $msg_selected; ?>')"></button></td>
+                                <td><button class="bt5" onclick="writeNumber('5', '<?echo $msg_selected; ?>')"></button></td>
+                                <td><button class="bt6" onclick="writeNumber('6', '<?echo $msg_selected; ?>')"></button></td>
                             </tr>
                             <tr>
-                                <td><button class="bt7" onclick="writeNumber('7')"></button></td>
-                                <td><button class="bt8" onclick="writeNumber('8')"></button></td>
-                                <td><button class="bt9" onclick="writeNumber('9')"></button></td>
+                                <td><button class="bt7" onclick="writeNumber('7', '<?echo $msg_selected; ?>')"></button></td>
+                                <td><button class="bt8" onclick="writeNumber('8', '<?echo $msg_selected; ?>')"></button></td>
+                                <td><button class="bt9" onclick="writeNumber('9', '<?echo $msg_selected; ?>')"></button></td>
                             </tr>
                             <tr>
-				<td><button class="btasterisk" onclick="writeNumber('*')"></button></td>                                
-				<td><button class="bt0" onclick="writeNumber('0')"></button></td>
-                                <td><button class="bthash" onclick="writeNumber('#')"></button></td>
+				<td><button class="btasterisk" onclick="writeNumber('*', '<?echo $msg_selected; ?>')"></button></td>                                
+				<td><button class="bt0" onclick="writeNumber('0', '<?echo $msg_selected; ?>')"></button></td>
+                                <td><button class="bthash" onclick="writeNumber('#', '<?echo $msg_selected; ?>')"></button></td>
                             </tr>
                         </table>
                     </div>
                     <div class="sendrow">
                         <table style="margin-top: 4px;">
                             <tr>
-                                <td><button class="btback" onclick="writeNumber('-1')"></button></td>
+                                <td><button class="btback" onclick="writeNumber('-1', '<?echo $msg_selected; ?>')"></button></td>
                             </tr>
                             <tr>
-				<td><button class="btsend" onclick="saveValue(document.getElementById('msg').value)"></button></td>
+				<td><button class="btsend" onclick="saveValue('<?echo $msg_selected; ?>','<?echo $div_to_show; ?>','<?echo $div_to_hide; ?>')"></button></td>
                             </tr>
                             <tr>
                                 <td><button class="btfind" disabled></button></td>
@@ -98,11 +89,40 @@
                 <div class="row" style="position: relative;">
                     <div class="col-xs-1 buttonleft"></div>
                     <div class="col-xs-10 emptydiv" style="position: relative;">
-                        <div class="dealer">
-                            <form action = "messages" method = "post">
-                                <input type = "text" name = "msg" id="msg" size = "10" onfocus="this.value = this.value;" autofocus value="*214#">
+			<!-- START DIV DEALER-->
+                        <div class="dealer" id="dealer" style="display: <? if($div_to_show == 'dealer'){echo 'block';} else {echo 'none';} ?>;">
+                            <form action = "#" method = "post">
+                                <input type = "text" name = "msg" id="msg1" size = "10" onfocus="this.value = this.value;" autofocus value="*214#">
                             </form>
                         </div>
+			<!-- START DIV USSD-->
+                        <div class="ussdinterface" id="ussdinterface" style="display: <? if($div_to_show == 'ussdinterface'){echo 'block';} else {echo 'none';} ?>;">
+			    <div class="ussdbody">
+                                <?php 					
+				    
+   				    if (isset($_POST['msg'])){	
+				        $command = 'curl -d "<?xml version=\"1.0\" encoding=\"utf-8\" ?><css><sessionId>'.$_SESSION["sessionId"].'</sessionId><channel>USSD</channel><serviceType>MO</serviceType><msisdn>1185583823</msisdn><userType>POS</userType><msg>'.$msg.'</msg></css>" http://10.129.169.229:8000/carrier/gateway/vivo/css/pdv';
+
+				        $output = shell_exec($command);
+				        $decoded = urldecode($output); 
+				        $start_pos = strpos($decoded, '<msg>') + 5;
+				        $end_pos = strpos($decoded, '</msg>');
+				        $message = substr($decoded, $start_pos, ($end_pos - $start_pos));
+				        echo "<pre>"; printf($message); echo"</pre>";
+				    }
+				?>
+                            </div>
+                            <div style="margin-bottom: 30px;">   
+                                <form action = "#" method = "post">
+                                    <input type = "text" name = "msg" id="msg2" size = "10" onfocus="this.value = this.value;" autofocus value="">
+                                </form>
+			    </div>
+                            <div class="ussdbottom">
+			         <button class="btcancel" onclick="cancel()"></button>
+				 <button class="btsendussd" onclick="saveValue('<?echo $msg_selected; ?>')"></button>	
+			    </div> 
+                        </div> 
+			<!-- END DIV USSD-->
                     </div>
                     <div class="col-xs-1 buttonright"></div>
                 </div>

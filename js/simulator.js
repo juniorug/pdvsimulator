@@ -1,6 +1,6 @@
-function writeNumber(number) {
-    document.getElementById("msg").focus();
-    var field = document.getElementById("msg").value;
+function writeNumber(number, msgID) {
+    document.getElementById(msgID).focus();
+    var field = document.getElementById(msgID).value;
     var conc;
     if (number == '-1') {
         conc = field.substring(0, field.length - 1);
@@ -8,20 +8,21 @@ function writeNumber(number) {
         conc = field.concat(number);
     }
 
-    document.getElementById("msg").innerHTML = conc;
-    document.getElementById("msg").value = conc;
+    document.getElementById(msgID).innerHTML = conc;
+    document.getElementById(msgID).value = conc;
 }
 
-function saveValue() {	
-   $('<form>').attr({ method: 'POST', action: 'messages.php', })
-    .append($('<input>').attr({ type: 'hidden', name: 'msg', value: document.getElementById("msg").value }))
+function saveValue(msgID, divToShow, divTohide) {   
+   
+   $('<form>').attr({ method: 'POST', action: '', })
+    .append($('<input>').attr({ type: 'hidden', name: 'msg', value: document.getElementById(msgID).value }))
     .appendTo("body")
     .submit()
     .remove();
 }
 
 function cancel() {
-    $('<form>').attr({ method: 'POST', action: 'index.php', })
+    $('<form>').attr({ method: 'POST', action: '', })
     .appendTo("body")
     .submit()
     .remove();	
@@ -35,5 +36,5 @@ function inputFocus(elmId) {
 }
 
 function testM() {
-    alert("msg2");
+     alert('msg');  
 }
