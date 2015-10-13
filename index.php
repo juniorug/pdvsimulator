@@ -24,7 +24,8 @@
 
         <? //js  ?>
         <script>
-              inputFocus("msg");
+              inputFocus('<? echo $msg_selected; ?>');
+              //inputFocus("msg);
         </script>
         <script type="text/javascript" src="js/simulator.js"></script>
         <script type="text/javascript" src="js/jquery.min.js"></script>
