@@ -1,18 +1,5 @@
-body {
-    		
-}
-
 pre {
     margin: 0px;
-}
-
-.content { 
-    background-image: url("../img/backgroundNew.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 100%;
-    height: 100%;
-    padding: 1px;
 }
 
 .container, .container-fluid { 
@@ -22,7 +9,7 @@ pre {
 }
 
 .wallpaper{
-    background-image: url("../img/wallpaper3.png");
+    background-image: url("../img/wallpaper.png");
     background-repeat: no-repeat;
     position: absolute;
     z-index: -1;
@@ -34,7 +21,7 @@ pre {
 }
 
 .fixedkeyboard{
-    background-image: url("../img/tablet_parts/background_keyboard.png");
+    background-image: url("../img/background_keyboard.png");
     background-repeat: repeat-x;
     position: absolute;
     z-index: 10;
@@ -46,7 +33,7 @@ pre {
 }
 
 .innerfixedkeyboard{
-    background-image: url("../img/tablet_parts/keyboard_fixed2.png");
+    background-image: url("../img/keyboard_fixed.png");
     background-repeat: no-repeat;
     z-index: 10;
     position: relative;
@@ -77,14 +64,13 @@ pre {
     float: left;	
 }
 
-
 .dealer { 
     border-radius: 15px;
     position:absolute;
     z-index: 10;
     margin-top: 15px;
     margin-left: 2px;
-    background-image: url("../img/dealer_crop2.png");
+    background-image: url("../img/dealer_crop.png");
     background-repeat: no-repeat;
     padding: 1%;
     font-family:'Open Sans';
@@ -135,15 +121,6 @@ pre {
     margin-left: 927px;
 }
 
-.send {
-    float: right;
-    /*margin-right: 336px;*/
-    margin-right: 45%;
-    margin-top: 80px;
-    width: 85;
-    height: 150;
-}
-
 .clear {
     clear: both;
 }
@@ -152,7 +129,7 @@ pre {
 
 /* corners*/
 .col-xs-1.cornertopleft {
-    background-image: url("../img/tablet_parts/corner_top_left.png");
+    background-image: url("../img/corner_top_left.png");
     background-repeat: no-repeat;
     height: 117px;	
     width: 133px;	
@@ -163,7 +140,7 @@ pre {
 }
 
 .col-xs-1.cornertopright{
-    background-image: url("../img/tablet_parts/corner_top_right.png");
+    background-image: url("../img/corner_top_right.png");
     background-repeat: no-repeat;
     height: 117px;	
     width: 131px;
@@ -172,7 +149,7 @@ pre {
 }
 
 .col-xs-1.cornerbottomleft {
-    background-image: url("../img/tablet_parts/corner_bottom_left.png");
+    background-image: url("../img/corner_bottom_left.png");
     background-repeat: no-repeat;
     height: 117px;
     width: 133px;
@@ -182,7 +159,7 @@ pre {
 }
 
 .col-xs-1.cornerbottomright{
-    background-image: url("../img/tablet_parts/corner_bottom_right.png");
+    background-image: url("../img/corner_bottom_right.png");
     background-repeat: no-repeat;
     height: 117px;
     width: 133px;
@@ -191,9 +168,8 @@ pre {
 }
 
 /* sides*/
-
 .col-xs-1.buttonleft {
-    background-image: url("../img/tablet_parts/button_left.png");
+    background-image: url("../img/button_left.png");
     background-repeat: no-repeat;
 	width:133px;
     height: 187px;	
@@ -201,7 +177,7 @@ pre {
 }
 
 .col-xs-1.buttonright{
-    background-image: url("../img/tablet_parts/button_right.png");
+    background-image: url("../img/button_right.png");
     background-repeat: no-repeat;
     width:131px;
     height: 187px;
@@ -209,28 +185,28 @@ pre {
 }
 
 .col-xs-1.degradeleft {
-    background-image: url("../img/tablet_parts/degrade_left.png");
+    background-image: url("../img/degrade_left.png");
     background-repeat: no-repeat;
     width:133px;
     height: 188px;	
 }
 
 .col-xs-1.degraderight{
-    background-image: url("../img/tablet_parts/degrade_right.png");
+    background-image: url("../img/degrade_right.png");
     background-repeat: no-repeat;
     width:131px;
     height: 188px;
 }
 
 .col-xs-1.borderleft {
-    background-image: url("../img/tablet_parts/border_left.png");
+    background-image: url("../img/border_left.png");
     background-repeat: repeat-y;
     width:133px;
     height: 280px;
 }
 
 .col-xs-1.borderright {
-    background-image: url("../img/tablet_parts/border_right.png");
+    background-image: url("../img/border_right.png");
     background-repeat: repeat-y;
     width:131px;
     height: 280px;	
@@ -242,7 +218,7 @@ pre {
 
 /* top/bottom*/
 .webcam {
-    background-image: url("../img/tablet_parts/webcam.png");
+    background-image: url("../img/webcam.png");
     background-repeat: no-repeat;
     width: 165px;
     height: 117px;
@@ -250,21 +226,21 @@ pre {
     margin-right: -1px;		
 }
 .col-xs-4.bordertop{
-    background-image: url("../img/tablet_parts/border_top.png");
+    background-image: url("../img/border_top.png");
     background-repeat: repeat-x;
     width: 403px;
     height: 117px;
 }
 
 .buttonsbottom {
-    background-image: url("../img/tablet_parts/buttons_bottom.png");
+    background-image: url("../img/buttons_bottom.png");
     background-repeat: no-repeat;
     width: 448px;
     height: 117px;
     float: left;	
 }
 .col-xs-3.borderbottom{
-    background-image: url("../img/tablet_parts/border_bottom.png");
+    background-image: url("../img/border_bottom.png");
     background-repeat: repeat-x;
     height: 117px;
     width: 261px;	
@@ -272,7 +248,7 @@ pre {
 
 /* BUTTONS*/
 
-.buttons, .bt1, .bt2, .bt3, .bt4, .bt5, .bt6, .bt7, .bt8, .bt9,.btdot, .btasterisk, .btfind, .btback, .bthash {
+.buttons, .bt0, .bt1, .bt2, .bt3, .bt4, .bt5, .bt6, .bt7, .bt8, .bt9,.btdot, .btasterisk, .btfind, .btback, .bthash, .btsend {
     width: 66px;
     height: 57px;
     margin: 5px 5px 0px 0px;
@@ -284,155 +260,138 @@ pre {
 }
 
 .bt0 {
-    background-image: url("../img/bt_resized/bt_0_2.png");   
-    background-repeat: no-repeat;
-    width: 66px;
-    height: 54px;
-    margin: 5px 5px 0px 0px;
-    background-repeat: no-repeat;
-    padding: 0px;
-    border-color: transparent;
-    border: none; 	
+    background-image: url("../img/bt_0.png");   
+    height: 54px;	
 }
 
 .bt1 {
-    background-image: url("../img/bt_resized/bt_1.png");    	
+    background-image: url("../img/bt_1.png");    	
 }
 
 .bt2 {
-    background-image: url("../img/bt_resized/bt_2.png");    	
+    background-image: url("../img/bt_2.png");    	
 }
 
 .bt3 {
-    background-image: url("../img/bt_resized/bt_3.png");    	
+    background-image: url("../img/bt_3.png");    	
 }
 
 .bt4 {
-    background-image: url("../img/bt_resized/bt_4.png");    	
+    background-image: url("../img/bt_4.png");    	
 }
 
 .bt5 {
-    background-image: url("../img/bt_resized/bt_5.png");    	
+    background-image: url("../img/bt_5.png");    	
 }
 
 .bt6 {
-    background-image: url("../img/bt_resized/bt_6.png");    	
+    background-image: url("../img/bt_6.png");    	
 }
 
 .bt7 {
-    background-image: url("../img/bt_resized/bt_7.png");    	
+    background-image: url("../img/bt_7.png");    	
 }
 
 .bt8 {
-    background-image: url("../img/bt_resized/bt_8.png");    	
+    background-image: url("../img/bt_8.png");    	
 }
 
 .bt9 {
-    background-image: url("../img/bt_resized/bt_9.png");    	
+    background-image: url("../img/bt_9.png");    	
 }
 
 .btdot {
-    background-image: url("../img/bt_resized/bt_dot.png"); 
+    background-image: url("../img/bt_dot.png"); 
     height: 54px; 	
 }
 
 .bthash {
-    background-image: url("../img/bt_resized/bt_hash.png");
+    background-image: url("../img/bt_hash.png");
     height: 54px; 	
 }
 
 .btasterisk {
-    background-image: url("../img/bt_resized/bt_asterisk.png");  
+    background-image: url("../img/bt_asterisk.png");  
     height: 54px; 	
 }
 
 .btback {
-    background-image: url("../img/bt_resized/bt_back_keyboard.png"); 
+    background-image: url("../img/bt_back_keyboard.png"); 
 }
 
 .btfind {
-    background-image: url("../img/bt_resized/bt_findSmall.png");   
+    background-image: url("../img/bt_findSmall.png");   
     height: 54px;
     margin-top: 7px; 	
 }
 
 .btsend {
-    background-image: url("../img/bt_resized/bt_sendBig.png");   
-    background-repeat: no-repeat;
-    width: 66px;
+    background-image: url("../img/bt_sendBig.png");   
     height: 117px;
-    margin: 6px 6px 0px 0px;
-    background-repeat: no-repeat;
-    padding: 0px;
-    border-color: transparent;
-    border: none; 	
+    margin: 6px 6px 0px 0px;	
 }
 
 .bt0:active {
-    background-image: url("../img/bt_resized/bt_0_clicked_2.png");   	
+    background-image: url("../img/bt_0_clicked.png");   	
 }
 
 .bt1:active {
-    background-image: url("../img/bt_resized/bt_1_clicked.png");    	
+    background-image: url("../img/bt_1_clicked.png");    	
 }
 
 .bt2:active {
-    background-image: url("../img/bt_resized/bt_2_clicked.png");    	
+    background-image: url("../img/bt_2_clicked.png");    	
 }
 
 .bt3:active {
-    background-image: url("../img/bt_resized/bt_3_clicked.png");    	
+    background-image: url("../img/bt_3_clicked.png");    	
 }
 
 .bt4:active {
-    background-image: url("../img/bt_resized/bt_4_clicked.png");    	
+    background-image: url("../img/bt_4_clicked.png");    	
 }
 
 .bt5:active {
-    background-image: url("../img/bt_resized/bt_5_clicked.png");    	
+    background-image: url("../img/bt_5_clicked.png");    	
 }
 
 .bt6:active {
-    background-image: url("../img/bt_resized/bt_6_clicked.png");    	
+    background-image: url("../img/bt_6_clicked.png");    	
 }
 
 .bt7:active {
-    background-image: url("../img/bt_resized/bt_7_clicked.png");    	
+    background-image: url("../img/bt_7_clicked.png");    	
 }
 
 .bt8:active {
-    background-image: url("../img/bt_resized/bt_8_clicked.png");    	
+    background-image: url("../img/bt_8_clicked.png");    	
 }
 
 .bt9:active {
-    background-image: url("../img/bt_resized/bt_9_clicked.png");    	
+    background-image: url("../img/bt_9_clicked.png");    	
 }
 
 .btdot:active {
-    background-image: url("../img/bt_resized/bt_dot_clicked.png");
+    background-image: url("../img/bt_dot_clicked.png");
     height: 54px;    	
 }
 
 .bthash:active {
-    background-image: url("../img/bt_resized/bt_hash_clicked.png");
+    background-image: url("../img/bt_hash_clicked.png");
     height: 54px; 	
 }
 
 .btasterisk:active {
-    background-image: url("../img/bt_resized/bt_asterisk_clicked.png");
+    background-image: url("../img/bt_asterisk_clicked.png");
     height: 54px;  	
 }
 
 .btback:active {
-    background-image: url("../img/bt_resized/bt_back_keyboard_clicked.png"); 
+    background-image: url("../img/bt_back_keyboard_clicked.png"); 
 }
 
 .btfind:active {
-    background-image: url("../img/bt_resized/bt_findSmall_clicked.png");    	
-}
-
-.btsend:active {
-    background-image: url("../img/bt_resized/bt_sendBig.png");   
+    background-image: url("../img/bt_findSmall_clicked.png");    	
 }
 
 .btcancel, .btsendussd {     
@@ -471,13 +430,13 @@ input[type=text],input[type=number]
     margin-top: 70px;
     text-decoration: none;
     background-repeat: repeat-x;
-    border-radius: 5px; /*up to date browsers support this, but you can add prefixes if you want*/
+    border-radius: 5px;
     border: 0;
 }
 
 .ussdinterface input[type=text],input[type=number]
 {
-    background-image: url("../img/ussd_input2.png");
+    background-image: url("../img/ussd_input.png");
     background-repeat: no-repeat;
     background-color: transparent;	
     color: white;
@@ -489,7 +448,7 @@ input[type=text],input[type=number]
     margin-top: 10px;
     text-decoration: none;
     background-repeat: repeat-x;
-    border-radius: 5px; /*up to date browsers support this, but you can add prefixes if you want*/
+    border-radius: 5px; 
     border: 0;
 }
 
