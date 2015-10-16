@@ -92,7 +92,7 @@
                     <div class="col-xs-10 emptydiv" style="position: relative;">
 			<!-- START DIV DEALER-->
                         <div class="dealer" id="dealer" style="display: <? if($div_to_show == 'dealer'){echo 'block';} else {echo 'none';} ?>;">
-                            <form action = "#" method = "post">
+                            <form action = "" method = "post">
                                 <input type = "text" name = "msg" id="msg1" size = "10" onfocus="this.value = this.value;" autofocus value="*214#">
                             </form>
                         </div>
@@ -114,7 +114,7 @@
 				?>
                             </div>
                             <div style="margin-bottom: 30px;">   
-                                <form action = "#" method = "post">
+                                <form action = "" method = "post">
                                     <input type = "text" name = "msg" id="msg2" size = "10" onfocus="this.value = this.value;" autofocus value="">
                                 </form>
 			    </div>
@@ -149,6 +149,20 @@
                     <div class="col-xs-3 borderbottom"></div>
                     <div class="col-xs-1 cornerbottomright"></div>
                 </div>
+		<div class="row">
+		    <footer class="footer">
+			<div class="container">
+		            <p class="text-muted">
+				&copy; 
+			        <?php 
+			            $fromYear = 2015; 
+			            $thisYear = (int)date('Y'); 
+			            echo $fromYear . (($fromYear != $thisYear) ? '-' . $thisYear : '');
+ 			        ?> Ericsson Inovação.	Developed By: Edivaldo Mascarenhas Jr.
+			  </p>
+			</div>
+		    </footer>			
+		</div>
             </div>
         </div>
     </body>

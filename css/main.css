@@ -5,7 +5,7 @@ pre {
 .container, .container-fluid { 
     background-repeat: no-repeat;
     margin-top: 5px;	
-    width: 1687px;
+    width: 100%;
 }
 
 .wallpaper{
@@ -127,6 +127,9 @@ pre {
     clear: both;
 }
 
+.text-muted { 
+    text-align: center;
+}
 /* tablet body classes*/
 
 /* corners*/
