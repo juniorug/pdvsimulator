@@ -102,7 +102,7 @@
                                 <?php 					
 				    
    				    if (isset($_POST['msg'])){	
-				        $command = 'curl -d "<?xml version=\"1.0\" encoding=\"utf-8\" ?><css><sessionId>'.$_SESSION["sessionId"].'</sessionId><channel>USSD</channel><serviceType>MO</serviceType><msisdn>1185583823</msisdn><userType>POS</userType><msg>'.$msg.'</msg></css>" http://10.129.169.229:8000/carrier/gateway/vivo/css/pdv';
+				        $command = 'curl -d "<?xml version=\"1.0\" encoding=\"utf-8\" ?><css><sessionId>'.$_SESSION["sessionId"].'</sessionId><channel>USSD</channel><serviceType>MO</serviceType><msisdn>11985583823</msisdn><userType>POS</userType><msg>'.$msg.'</msg></css>" http://10.129.169.229:8000/carrier/gateway/vivo/css/pdv';
 
 				        $output = shell_exec($command);
 				        $decoded = urldecode($output); 
