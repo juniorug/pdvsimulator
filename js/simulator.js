@@ -16,6 +16,7 @@ function saveValue(msgID, divToShow, divTohide) {
    
    $('<form>').attr({ method: 'POST', action: '', })
     .append($('<input>').attr({ type: 'hidden', name: 'msg', value: document.getElementById(msgID).value }))
+    .append($('<input>').attr({ type: 'hidden', name: 'environment', value: document.getElementById('myonoffswitch').value }))
     .appendTo("body")
     .submit()
     .remove();
