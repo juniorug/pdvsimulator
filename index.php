@@ -49,6 +49,7 @@ rel="icon" type="image/x-icon" />
         </script>
     </head>
     <body>
+	<? //echo 'ip: '.$ip.'<br> active: '.$active.'<br>';?>
         <div class="container-fluid">
             <div class="row" style="position: relative;">
                 <!-- fixed divs--> 
@@ -154,8 +155,8 @@ $div_to_hide; ?>')"></button></td>
                                     <input type = "text" name = "msg" id="msg2" size = "10" onfocus="this.value = this.value;" autofocus value="">
 
 				    <div class="onoffswitch">
-				        <input type="checkbox" name="environment" class="onoffswitch-checkbox" id="myonoffswitch" 
-					<? if (!$active) { echo ' checked '; } ?> >
+				        <input type="checkbox" name="environment" class="onoffswitch-checkbox" id="myonoffswitch2"
+					<? if (!$active) { echo " value='1' checked "; } else { echo " value='0' "; } ?> >
 				        <label class="onoffswitch-label" for="myonoffswitch">
 					    <span class="onoffswitch-inner"></span>
 					    <span class="onoffswitch-switch"></span>
